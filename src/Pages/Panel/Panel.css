@@ -1,0 +1,29 @@
+.base {
+  width: 100%;
+  padding: 80px 0;
+  background: url(../../assets/image/vanishing-stripes.png);
+  background-size: contain;
+}
+.panel {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.ax {
+  width: 130px ;
+  height: 130px ;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.sale{
+    background-color: #5732FB;
+ 
+}
+.earn{
+    background-color: #FD6B22;
+}
+@media (max-width:768px){
+  .rater > *{
+    border: unset !important;
+  }
+}

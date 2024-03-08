@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: yekan;
+}
+@font-face {
+    font-family: yekan;
+    src: url(./assets/IRANYekanWebMedium.woff);
+}
+@font-face {
+    font-family: lalezar;
+    src: url(./assets/Lalezar.ttf);
+}

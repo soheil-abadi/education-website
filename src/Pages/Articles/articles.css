@@ -1,0 +1,16 @@
+.link > *{
+    border: 1px solid black;
+    margin: 0 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    transition: all 100ms linear;
+    font-family: sans-serif;
+}
+.link > *:hover{
+    
+    color: white;
+    background-color: black;
+   
+}
