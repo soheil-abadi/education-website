@@ -49,28 +49,28 @@ const Menu = () => {
                 className="justify-content-end flex-grow-1"
                 style={{ fontFamily: "yekan" }}
               >
-                <NavLink to="/" className="nav-link text-white mx-2">
+                <NavLink to="/SPA-project/" className="nav-link text-white mx-2">
                   صفحه اصلی
                 </NavLink>
-                <NavLink to="/About" className="nav-link text-white mx-2">
+                <NavLink to="/SPA-project/About" className="nav-link text-white mx-2">
                   درباره ما
                 </NavLink>
-                <NavLink to="/Articles" className="nav-link text-white mx-2">
+                <NavLink to="/SPA-project/Articles" className="nav-link text-white mx-2">
                   مقالات
                 </NavLink>
-                <NavLink to="/Panel" className="nav-link text-white mx-2">
+                <NavLink to="/SPA-project/Panel" className="nav-link text-white mx-2">
                   پنل
                 </NavLink>
                 {isLogin() ? (
                   <NavLink
-                    to="/Login"
+                    to="/SPA-project/Login"
                     onClick={logout}
                     className="nav-link text-white mx-2"
                   >
                     خروج
                   </NavLink>
                 ) : (
-                  <NavLink to="/Login" className="nav-link text-white mx-2">
+                  <NavLink to="/SPA-project/Login" className="nav-link text-white mx-2">
                     ورود
                   </NavLink>
                 )}

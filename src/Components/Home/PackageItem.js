@@ -13,7 +13,7 @@ const CoursesItem = ({ products }) => {
             {products.description}
           </Card.Text>
           <Button variant='primary' style={{border:"0"}} size="sm">
-          <Link to={`/Course/${products.id}`} className='text-white nav-link'>مشاهده دوره</Link>
+          <Link to={`/SPA-project/Course/${products.id}`} className='text-white nav-link'>مشاهده دوره</Link>
         </Button>
         </Card.Body>
       </Card>

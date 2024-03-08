@@ -7,11 +7,11 @@ import Course from "./Pages/Course/Course";
 import article from "./data1";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 const routes = [
-  { path: "/", element: <Home /> },
-  { path: "/Course/:courseId", element: <Course /> },
-  { path: "/About", element: <About /> },
+  { path: "/SPA-project/", element: <Home /> },
+  { path: "/SPA-project/Course/:courseId", element: <Course /> },
+  { path: "/SPA-project/About", element: <About /> },
   {
-    path: "/Articles/*",
+    path: "/SPA-project/Articles/*",
     element: <Articles />,
     children: [
       { path: "javaScript", element: article[0].desc },
@@ -20,13 +20,13 @@ const routes = [
     ],
   },
   {
-    path: "/Panel",
+    path: "/SPA-project/Panel",
     element: (
       <PrivateRoute>
         <Panel />
       </PrivateRoute>
     ),
   },
-  { path: "/Login", element: <Login /> },
+  { path: "/SPA-project/Login", element: <Login /> },
 ];
 export default routes;
