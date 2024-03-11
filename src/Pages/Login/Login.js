@@ -12,7 +12,7 @@ const Login = () => {
     if (name == "sp" && pass == "1234") {
       document.cookie =
         "username=sp; expires=Thu, 18 Dec 2030 12:00:00 UTC; path=/";
-      navigate("/Panel");
+      navigate("/SPA-project/Panel");
     } else {
       Swal.fire({
         title: "ناموفق!",
