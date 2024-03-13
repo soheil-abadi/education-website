@@ -15,7 +15,12 @@ const Menu = () => {
       <Navbar
         key={expand}
         expand={expand}
-        style={{ backgroundColor: "#332941",position:"sticky",top:"0",zIndex:"1010" }}
+        style={{
+          backgroundColor: "#332941",
+          position: "sticky",
+          top: "0",
+          zIndex: "1010",
+        }}
         className=""
       >
         <Container>
@@ -48,28 +53,63 @@ const Menu = () => {
                 className="justify-content-end flex-grow-1"
                 style={{ fontFamily: "yekan" }}
               >
-                <NavLink to="/SPA-project/" className="nav-link text-white mx-2">
+                <NavLink
+                  to="/SPA-project/"
+                  className="nav-link text-white mx-2"
+                >
                   صفحه اصلی
                 </NavLink>
-                <NavLink to="/SPA-project/About" className="nav-link text-white mx-2">
+                <NavLink
+                  to="/SPA-project/About"
+                  className={(navItem) =>
+                    navItem.isActive
+                      ? "nav-link text-warning mx-2"
+                      : "nav-link text-white mx-2 "
+                  }
+                >
                   درباره ما
                 </NavLink>
-                <NavLink to="/SPA-project/Articles" className="nav-link text-white mx-2">
+                <NavLink
+                  to="/SPA-project/Articles"
+                  className={(navItem) =>
+                    navItem.isActive
+                      ? "nav-link text-warning mx-2"
+                      : "nav-link text-white mx-2 "
+                  }
+                >
                   مقالات
                 </NavLink>
-                <NavLink to="/SPA-project/Panel" className="nav-link text-white mx-2">
+                <NavLink
+                  to="/SPA-project/Panel"
+                  className={(navItem) =>
+                    navItem.isActive
+                      ? "nav-link text-warning mx-2"
+                      : "nav-link text-white mx-2 "
+                  }
+                >
                   پنل
                 </NavLink>
                 {isLogin() ? (
                   <NavLink
                     to="/SPA-project/Login"
                     onClick={logout}
-                    className="nav-link text-white mx-2"
+                    className={(navItem) =>
+                      navItem.isActive
+                        ? "nav-link text-warning mx-2"
+                        : "nav-link text-white mx-2 "
+                    }
                   >
                     خروج
                   </NavLink>
                 ) : (
-                  <NavLink to="/SPA-project/Login" className="nav-link text-white mx-2">
+                  <NavLink
+                    to="/SPA-project/Login"
+                    className={(navItem) =>
+                      navItem.isActive
+                        ? "nav-link text-warning mx-2"
+                        : "nav-link text-white mx-2 "
+                    }
+                  >
                     ورود
                   </NavLink>
                 )}
