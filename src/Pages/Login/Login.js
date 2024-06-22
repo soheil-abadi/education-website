@@ -8,10 +8,9 @@ const Login = () => {
   const [name, setName] = useState("");
   const [pass, setPass] = useState("");
   const navigate = useNavigate();
+  console.log(document.cookie);
   const submitHandler = () => {
     if (name == "sp" && pass == "1234") {
-      document.cookie =
-        "username=sp; expires=Thu, 18 Dec 2030 12:00:00 UTC; path=/";
       navigate("/SPA-project/Panel");
     } else {
       Swal.fire({
@@ -28,9 +27,11 @@ const Login = () => {
   return (
     <>
       <Menu />
-      
+
       <div className="base-login">
-      <p style={{fontSize:"14px"}} className="text-center">با یوزرنیم sp و پسورد 1234 وارد صفحه پنل شوید</p>
+        <p style={{ fontSize: "14px" }} className="text-center">
+          با یوزرنیم sp و پسورد 1234 وارد صفحه پنل شوید
+        </p>
         <div className="login-page">
           <div className="form">
             <form className="register-form">

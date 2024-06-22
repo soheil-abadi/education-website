@@ -1,7 +1,6 @@
 import Menu from "../../Components/Menu/Menu";
 import Footer from "../../Components/Footer/Footer";
 import { Col, Container, Row } from "react-bootstrap";
-import sp from "../../assets/image/sp.jpg";
 import "./Panel.css";
 import {
   facebook,
@@ -21,7 +20,7 @@ const Panel = () => {
       >
         <Container className="panel col-8 offset-2 d-flex flex-wrap flex-wrap-reverse flex-lg-nowrap  rounded-5">
           <Col
-            lg={4} 
+            lg={4}
             className=" rounded-4 bg-white p-4"
             style={{ direction: "ltr" }}
           >
@@ -78,13 +77,15 @@ const Panel = () => {
             </div>
           </Col>
           <Col
-            lg={8} xs={12}
+            lg={8}
+            xs={12}
             className=" rounded-4 justify-content-center flex-column align-items-center  d-flex bg-white p-5"
-            
           >
             <img src={sp} className="ax img-fluid mb-3" />
             <h2>SP</h2>
-            <h5 style={{ fontWeight: "bold",textAlign:"center" }}>Project Manager</h5>
+            <h5 style={{ fontWeight: "bold", textAlign: "center" }}>
+              Project Manager
+            </h5>
             <p style={{ textAlign: "center", direction: "ltr" }} className="">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
               cum quisquam pariatur repudiandae numquam fugiat nihil.
